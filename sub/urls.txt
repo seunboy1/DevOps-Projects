@@ -1,0 +1,2 @@
+[URL01] = https://github.com/seunboy1/Udapeople
+[URL02] = http://udapeople-fb94dcc.s3-website-us-east-1.amazonaws.com
