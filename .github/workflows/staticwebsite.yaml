@@ -18,26 +18,26 @@ jobs:
       REGION: eu-west-1
       DIST_ID: EWF2XRZWNJ64E
 
-    steps:
-    - name: Checkout
-    - uses: actions/checkout@v2
-    # unshallow git clone
-    - run: |
-        git fetch --prune --unshallow
+    # steps:
+    # - name: Checkout
+    # - uses: actions/checkout@v2
+    # # unshallow git clone
+    # - run: |
+    #     git fetch --prune --unshallow
         
-    - name: Configure AWS credential
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.ACCESS_KEY }}
-        aws-secret-access-key: ${{ secrets.SECRET_KEY }}
-        aws-region: ${{ env.REGION }}
+    # - name: Configure AWS credential
+    #   uses: aws-actions/configure-aws-credentials@v1
+    #   with:
+    #     aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+    #     aws-secret-access-key: ${{ secrets.SECRET_KEY }}
+    #     aws-region: ${{ env.REGION }}
 
-    - name: Copy files to S3
-      run: |
-        aws s3 sync --delete ${{ env.DIST }} ${{ env.BUCKET }}
-   
-    # - name: Invalidate cloudfront cache
+    # - name: Copy files to S3
     #   run: |
-    #     aws cloudfront create-invalidation \
-    #       --distribution-id ${{ env.DIST_ID }} \
-    #       --paths "/*"
+    #     aws s3 sync --delete ${{ env.DIST }} ${{ env.BUCKET }}
+   
+    # # - name: Invalidate cloudfront cache
+    # #   run: |
+    # #     aws cloudfront create-invalidation \
+    # #       --distribution-id ${{ env.DIST_ID }} \
+    # #       --paths "/*"
