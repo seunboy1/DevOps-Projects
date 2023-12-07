@@ -1,2 +1,2 @@
 # Personal-Website
-Personal portfolio website hosted using GitHub Pages
+Deploy Static Website to AWS S3 and Route53
