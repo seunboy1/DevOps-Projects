@@ -57,7 +57,7 @@ This project demonstrate how to deploy a static website to AWS using AWS S3 and 
 8. Set up CloudFront distribution. But first we need to set up certificates so we can have our website https enabled. Note you must create your ssl certificate in us-east-1. For more info on this check this [link](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-and-https-requirements.html)
    1. request a public certificate
         ![pubcert](assets/img/pubcert.png)
-   2. request for 2 certificate. A wildcard for subdomain name eg 'www.oluwaseunadeyo.com.ng' and apex domain name 'oluwaseunadeyo.com.ng'.
+   2. request for 2 certificate. A wildcard for subdomain name eg *www.oluwaseunadeyo.com.ng* and apex domain name **oluwaseunadeyo.com.ng**.
         Note: This might take a while.
         ![wildcard](assets/img/wildcard.png)
    3. Create CNAME record in Route53
