@@ -29,7 +29,7 @@ This project demonstrate how to deploy a static website to AWS using AWS S3 and 
 ![Upload to S3 bucket](assets/img/upload.png)
 
 4. Change the Bucket Policy in the permissions tab to allow access to the content of the bucket.
-![Bucket policy](assets/img/bucket policy.png)
+![Bucket policy](assets/img/bucketpolicy.png)
 ```
 {
     "Version": "2012-10-17",
