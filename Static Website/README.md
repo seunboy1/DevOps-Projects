@@ -1,5 +1,5 @@
 # Personal-Website
-This project demonstrate how to deploy a static website to AWS using AWS S3 and Route53.
+This project demonstrate how to deploy a static website to AWS using AWS S3, Cloudfront and Route53.
 
 
 ![static website](assets/img/staticwebsite.png)
