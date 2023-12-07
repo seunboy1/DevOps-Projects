@@ -2,15 +2,16 @@ name: Build and Deploy Static Website
 
 on:
   push:
-    # branches: 
-    #   - main
+    branches: 
+      - main
     # paths: 
     #   - Static_Website/**
-    paths:
-      - 'Static_Website/**'
+    # paths:
+    #   - 'Static_Website/**'
 
 jobs:
   build-linux:
+    name: Build linux
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
@@ -24,12 +25,6 @@ jobs:
 # 
 
 
-# jobs:
-#   build-linux:
-#     name: Build linux
-#     runs-on: ubuntu-latest
-#     strategy:
-#       max-parallel: 5
 #     env:
 #     # bucket name, region, cloudfront distribution id
 #       BUCKET: oluwaseunadeyo.com.ng
