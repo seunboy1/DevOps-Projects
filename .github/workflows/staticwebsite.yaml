@@ -24,6 +24,7 @@ jobs:
     - run: |
         git fetch --prune --unshallow
 
+        
     # - name: Configure AWS credential
     #   uses: aws-actions/configure-aws-credentials@v1
     #   with:
