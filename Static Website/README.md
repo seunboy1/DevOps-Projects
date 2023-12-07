@@ -47,9 +47,9 @@ This project demonstrate how to deploy a static website to AWS using AWS S3 and 
 
 5. Enable Static Website hosting in the bucket properties tab.
 ![Bucket properties](assets/img/enabletatic.png)
-Note: the hosted zone should have the same name as your domain name
 
 6. Create a simple routing record in the same region as your s3 bucket in your already created hosted zone.
 ![Route53](assets/img/route53.png)
+Note: the hosted zone should have the same name as your domain name
 
 7. Wait a while and you should see your website up and kicking
