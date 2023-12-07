@@ -1,7 +1,10 @@
 name: Build and Deploy Static Website
 
 
-on: [push]
+on:
+  push:
+    branches: [main]
+    paths: ['Static_Website/**']
 
 jobs:
   build-linux:
@@ -17,10 +20,6 @@ jobs:
         
 # 
 
-# on:
-#   push:
-#     branches: [main]
-#     paths: ['Static_Website/**']
 
 # jobs:
 #   build-linux:
