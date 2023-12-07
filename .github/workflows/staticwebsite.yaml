@@ -25,9 +25,9 @@ jobs:
     steps:
     - name: Checkout
     - uses: actions/checkout@v2
-    # unshallow git clone
-    - run: |
-        git fetch --prune --unshallow
+    # # unshallow git clone
+    # - run: |
+    #     git fetch --prune --unshallow
         
 # 
 
