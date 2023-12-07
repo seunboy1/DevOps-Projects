@@ -7,12 +7,14 @@ This project demonstrate how to deploy a static website to AWS using AWS S3, Clo
 ### Prerequisites.
 * **You should have a domain name already purchased to link with your Static Website. You can use whogohost.com**
 * **Your Website content to display on your domain.**
-* **You have full access to Rout53 and S3.**
+* **You have full access to Rout53, cloudfront and S3.**
   
 ### By the end of this post you will be able to: 
 * **Create an S3 bucket and Configure it for static website hosting.**
 * **Create a record in Route 53.**
-* **Then Finally Link the S3, Custom Domain via Route 53 To access your website.**
+* * **Create ssl certificates.**
+* * **Create a cloudfront distribution.**
+* **Then Finally Link the S3, Custom Domain via Route 53 and cloudfront To access your website.**
 ### Here is a sample of how it should look like.
 ![website](assets/img/website.png)
 
@@ -80,4 +82,4 @@ This project demonstrate how to deploy a static website to AWS using AWS S3, Clo
     ![oldA](assets/img/oldA.png)
     We are going to modify the previous record to point to out cloudfront distribution rather than our s3 endpoint url link
     ![newA](assets/img/newA.png)
-    You can create another A record but this time with a www subdomain.
+    You can also create another A record but this time with a www subdomain.
