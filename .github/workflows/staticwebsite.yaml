@@ -2,9 +2,12 @@ name: Build and Deploy Static Website
 
 on:
   push:
-    branches: [main]
+    # branches: 
+    #   - main
     # paths: 
-    #   - 'Static_Website/**'
+    #   - Static_Website/**
+    paths:
+      - 'Static_Website/**'
 
 jobs:
   build-linux:
