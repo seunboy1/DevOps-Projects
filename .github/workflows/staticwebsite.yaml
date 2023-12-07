@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
+    env:
+    # bucket name, region, cloudfront distribution id
+      BUCKET: oluwaseunadeyo.com.ng
+      DIST: build
+      REGION: eu-west-1
+      DIST_ID: EWF2XRZWNJ64E
 
     steps:
     - uses: actions/checkout@v2
@@ -25,12 +31,6 @@ jobs:
 # 
 
 
-#     env:
-#     # bucket name, region, cloudfront distribution id
-#       BUCKET: oluwaseunadeyo.com.ng
-#       DIST: build
-#       REGION: eu-west-1
-#       DIST_ID: EWF2XRZWNJ64E
 
 #     steps:
 #     - name: Checkout
