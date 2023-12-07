@@ -52,4 +52,11 @@ This project demonstrate how to deploy a static website to AWS using AWS S3 and 
 ![Route53](assets/img/route53.png)
 Note: the hosted zone should have the same name as your domain name
 
-7. Wait a while and you should see your website up and kicking
+7. Wait a while and you should see your website up and kicking.
+   Note: this is a very simple way of hosting your website however we can take it one step further.
+8. Set up CloudFront distribution. But first we need to set up certificates so we can have our website https enabled.
+   1. request a public certificate
+   2. request for 2 certificate. A wildcard for subdomain name eg 'www.oluwaseunadeyo.com.ng' and apex domain name 'oluwaseunadeyo.com.ng'. N
+        Note: This migh take a while 
+   3. Create CNAME record in Route53
+9.  
