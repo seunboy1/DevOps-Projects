@@ -18,12 +18,12 @@ jobs:
       REGION: eu-west-1
       DIST_ID: EWF2XRZWNJ64E
 
-    # steps:
-    # - name: Checkout
-    # - uses: actions/checkout@v2
-    # # unshallow git clone
-    # - run: |
-    #     git fetch --prune --unshallow
+    steps:
+    - name: Checkout
+    - uses: actions/checkout@v2
+    # unshallow git clone
+    - run: |
+        git fetch --prune --unshallow
         
     # - name: Configure AWS credential
     #   uses: aws-actions/configure-aws-credentials@v1
